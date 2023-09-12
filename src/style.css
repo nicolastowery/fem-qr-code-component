@@ -1,0 +1,50 @@
+/* - White: hsl(0, 0%, 100%)
+- Light-gray: hsl(212, 45%, 89%)
+- Grayish-blue: hsl(220, 15%, 55%)
+- Dark-blue: hsl(218, 44%, 22%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* default is content-box which will cause padding to be added to the width, not inducted in */
+}
+.app {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  height: 100dvh; /* viewport height */
+  width: 100dvw; /* viewport width */
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  text-align: center;
+  row-gap: 25px;
+  border-radius: 15px;
+}
+
+.card__header {
+  color: hsl(218, 44%, 22%);
+  font-size: 145%;
+  font-weight: 700;
+  padding: 0 28px 0 28px;
+}
+
+.card__text {
+  color: hsl(220, 15%, 55%);
+  padding: 0 28px 20px 28px;
+}
+
+.card__qr {
+  width: 100%;
+  border-radius: 15px;
+}
